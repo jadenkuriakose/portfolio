@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto+Slab:wght@300;400;600&display=swap');
+
 body {
   margin: 0;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   background-image: url("bck.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   color: #ffffff;
   min-height: 100vh;
 }
@@ -13,7 +18,7 @@ body {
 
 .sidebar {
   width: 240px;
-  background-color: #1e1e1e;
+  background-color: rgba(30, 30, 30, 0.9);
   padding: 20px;
   overflow-y: auto;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -24,6 +29,7 @@ body {
 }
 
 .sidebar-title {
+  font-family: 'Roboto Slab', serif;
   color: #ff2c64;
   font-size: 24px;
   margin-bottom: 20px;
@@ -83,7 +89,7 @@ body {
 }
 
 .section {
-  background-color: #1e1e1e;
+  background-color: rgba(30, 30, 30, 0.8);
   border-radius: 8px;
   padding: 25px;
   margin-bottom: 30px;
@@ -96,6 +102,7 @@ body {
 }
 
 .section-title {
+  font-family: 'Roboto Slab', serif;
   font-size: 28px;
   margin-bottom: 20px;
   background: linear-gradient(45deg, #FF3366, #FF6B6B);
@@ -111,6 +118,7 @@ body {
 }
 
 .container h4 {
+  font-family: 'Roboto Slab', serif;
   color: #ffffff;
   margin-bottom: 10px;
   font-size: 20px;
@@ -151,6 +159,7 @@ body {
 }
 
 .experience-content h4, .project-content h4 {
+  font-family: 'Roboto Slab', serif;
   color: #ffffff;
   margin-bottom: 15px;
   font-size: 20px;
@@ -159,6 +168,7 @@ body {
 .highlight-list {
   color: #b0b0b0;
   padding-left: 20px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .highlight-list li {
@@ -292,5 +302,4 @@ body {
     font-size: 12px;
   }
 }
-
 
