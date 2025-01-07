@@ -3,11 +3,12 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   background-image: url("bck.png");
   color: #ffffff;
+  min-height: 100vh;
 }
 
 .app {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .sidebar {
@@ -16,6 +17,10 @@ body {
   padding: 20px;
   overflow-y: auto;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  transition: transform 0.3s ease-in-out;
 }
 
 .sidebar-title {
@@ -121,8 +126,10 @@ body {
   margin-bottom: 30px;
 }
 
-.project-container a{
+.project-container a {
   color: #ff2c64;
+  margin-right: 15px;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .project-container a:hover {
@@ -188,20 +195,57 @@ body {
   margin-top: 10px;
 }
 
-@media (max-width: 768px) {
+.sidebar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+@media (max-width: 1024px) {
   .app {
     flex-direction: column;
   }
 
   .sidebar {
     width: 100%;
-    padding: 15px;
+    height: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateY(-100%);
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    transform: translateY(0);
+  }
+
+  .sidebar-toggle {
+    display: block;
   }
 
   .content {
-    padding: 15px;
+    margin-top: 60px;
+    padding: 20px;
   }
 
+  .section-title {
+    font-size: 26px;
+  }
+
+  .container h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
   .experience-container, .project-container {
     flex-direction: column;
   }
@@ -212,10 +256,6 @@ body {
 
   .section-title {
     font-size: 24px;
-  }
-
-  .container h4 {
-    font-size: 18px;
   }
 
   .highlight-list li {
@@ -252,4 +292,5 @@ body {
     font-size: 12px;
   }
 }
+
 

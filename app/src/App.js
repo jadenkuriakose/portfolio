@@ -1,11 +1,17 @@
-import React from 'react';
-import { FaGraduationCap, FaBriefcase, FaCogs, FaLaptop, FaUsers, FaLinkedin, FaGithub, FaFileAlt, FaEnvelope, FaCertificate, FaBasketballBall, FaSmile, FaDumbbell, FaMusic, FaGamepad } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaGraduationCap, FaBriefcase, FaCogs, FaLaptop, FaUsers, FaLinkedin, FaGithub, FaFileAlt, FaEnvelope, FaCertificate, FaBasketballBall, FaSmile, FaDumbbell, FaMusic, FaGamepad, FaBars } from 'react-icons/fa';
 import './App.css';
 
 const App = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <div className="app">
-      <div className="sidebar">
+      <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <h2 className="sidebar-title">Jaden Kuriakose</h2>
         <ul className="sidebar-nav">
           <li><a href="#education"><FaGraduationCap /> Education</a></li>
@@ -33,6 +39,9 @@ const App = () => {
       </div>
 
       <div className="content">
+        <button className="sidebar-toggle" onClick={toggleSidebar}>
+          <FaBars />
+        </button>
 
         <div id="education" className="section">
           <h3 className="section-title">Education</h3>
@@ -179,18 +188,20 @@ const App = () => {
             </ul>
           </div>
         </div>
+
         <div id="hobbies" className="section">
           <h3 className="section-title">Hobbies</h3>
           <div className="container">
-            <p><FaBasketballBall></FaBasketballBall> Playing Sports</p> 
-            <p><FaDumbbell></FaDumbbell> Going to the Gym</p>
-            <p><FaMusic></FaMusic> Listening to Music</p>
-            <p><FaGamepad></FaGamepad> Playing Video Games</p>
-            </div>
+            <p><FaBasketballBall /> Playing Sports</p> 
+            <p><FaDumbbell /> Going to the Gym</p>
+            <p><FaMusic /> Listening to Music</p>
+            <p><FaGamepad /> Playing Video Games</p>
           </div>
+        </div>
       </div>
     </div>
   );
 }
 
 export default App;
+
