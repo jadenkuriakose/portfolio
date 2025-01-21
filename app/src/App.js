@@ -116,6 +116,20 @@ const App = () => {
           <div className="glowing-line"></div>
 
           <div className="project-container">
+            <div className="project-content">
+              <h4>Traffic Light Classifier | Python, OpenCV2, YoloV8, numpy</h4>
+              <ul className="highlight-list">
+                <li>Converts images byte size arrays using opencv and connects to yolov8 for object detection of traffic lights</li>
+                <li>Analyzes image bytes by converting the bytes into a numpy array and using hsv to check the dominant color of the traffic light</li>
+                <li>Achieved 90% accuracy on online image test case and with real life test cases collected while driving</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div className="glowing-line"></div>
+
+          <div className="project-container">
           <a href="https://github.com/jadenkuriakose/MentAssistant" aria-label="GitHub Profile">
             <FaGithub />
           </a>
