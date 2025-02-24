@@ -16,10 +16,10 @@ const App = () => {
         <ul className="sidebar-nav">
           <li><a href="#education"><FaGraduationCap /> Education</a></li>
           <li><a href="#experience"><FaBriefcase /> Experience</a></li>
+          <li><a href="#extracurriculars"><FaUsers /> Extracurriculars</a></li>
           <li><a href="#projects"><FaCogs /> Projects</a></li>
           <li><a href="#skills"><FaLaptop /> Technical Skills</a></li>
           <li><a href="#certifications"><FaCertificate /> Certifications</a></li>
-          <li><a href="#extracurriculars"><FaUsers /> Extracurriculars</a></li>
           <li><a href="#hobbies"><FaSmile /> Hobbies</a></li>
         </ul>
         <div className="socials">
@@ -48,9 +48,9 @@ const App = () => {
           <div className="container">
             <h4>University of Texas at Dallas</h4>
             <p>Bachelor of Science in Computer Science</p>
-            <p>GPA: 4.0</p>
+            <p>GPA: 4.0/4</p>
             <p>Expected Graduation: Dec. 2026</p>
-            <p>Involvements: Collegium V Honors, Deans List, ACM</p>
+            <p>Clubs/Extracurriculars: ACM, Dean's List, AIS</p>
             <p>Relevant Coursework: Computer Science II, Discrete Math, Computer Architecture, & Systems Programming</p>
           </div>
         </div>
@@ -60,14 +60,25 @@ const App = () => {
 
           <div className="experience-container">
             <div className="experience-content">
-              <h4>Tomorrows AI - Software Engineer Intern | Oct. 2024 - Current</h4>
+              <h4>Tomorrows AI - Software Engineer Intern | Sept. 2024 - Feb. 2025</h4>
               <ul className="highlight-list">
-                <li>Integrated React & Firebase for profile management, reducing load time by 25% & increasing user engagement by 45%</li>
-                <li>Implemented interactive maps with React improving user retention by 35% without significant impact on page latency</li>
-                <li>Collaborated in an Agile environment increasing delivery speed by 50% and reducing bug reports by 30% over time</li>
+               <li>Optimized profile management by reducing load time 25% and increasing engagement 45% using React & Firebase</li>
+               <li>Enhanced user retention by 35% by integrating interactive maps with React without adding noticeable page latency</li>
+               <li>Accelerated delivery speed by 50% and cut bug reports by 30% by collaborating in Agile sprints and code reviews</li>
               </ul>
             </div>
           </div>
+
+          <div className="glowing-line"></div>
+
+          <div className="experience-content">
+              <h4>SuperIntro - AI Software Engineer Intern | Oct. 2024 - Dec. 2025</h4>
+              <ul className="highlight-list">
+               <li>Reduced voice to voice chatbot latency by 60% by integrating inferencing systems with under 300 ms response times</li>
+              <li>Decreased chatbot costs and provided users with the opportunity to choose between over 30 different voice settings</li>
+              <li>Improved chatbot response quality through extensive testing and prompt engineering</li>
+              </ul>
+            </div>
 
           <div className="glowing-line"></div>
 
@@ -75,9 +86,9 @@ const App = () => {
             <div className="experience-content">
               <h4>theCoderSchool - Code Instructor | May 2024 - Dec. 2024</h4>
               <ul className="highlight-list">
-                <li>Taught 10+ students various programming languages and frameworks, increasing project completion rates by 40%</li>
-                <li>Created personalized lesson plans based on student progress, resulting in a 30% increase in knowledge retention</li>
-                <li>Guided students through real-world projects, cutting completion time by 25%</li>
+                <li>Increased student project completion rates by 40% by teaching 10+ students coding languages and frameworks</li>
+                <li>Boosted knowledge retention by 30% by designing personalized lesson plans tailored to student progress</li>
+                <li>Oversaw the development of advanced full-stack projects with 100+ real-time users & 1000+ weekly visitors and continue to assist with maintenance</li>
               </ul>
             </div>
           </div>
@@ -88,13 +99,36 @@ const App = () => {
             <div className="experience-content">
               <h4>Lentura LLC - Full Stack Engineer Intern | Aug. 2023 - Feb. 2024</h4>
               <ul className="highlight-list">
-                <li>Constructed REST APIs with Node.js, AWS Lambda, & mySQL for inventory streamlining frontend operations by 30%</li>
-                <li>Developed user verification systems with Node.js, mySQL, and Amazon Pinpoint increasing function speeds by 40%</li>
-                <li>Fully integrated payment systems into checkout using React.js, Paypal API, and Stripe API increasing sales opportunity</li>
+                <li>Streamlined frontend operations by 30% by building REST APIs using Node.js, AWS Lambda, and MySQL</li>
+                <li>Decreased verification SMS delay by 40% by implementing lambda functions with Node.js, AWS Pinpoint & SNS</li>
+                <li>Expanded sales potential by integrating 10+ payment options using React, PayPal API, and Stripe API</li>
               </ul>
             </div>
           </div>
         </div>
+
+        <div id="extracurriculars" className="section">
+  <h3 className="section-title">Extracurriculars</h3>
+  
+  <div className="container">
+    <h4>Software Development Officer | ACM UTD | Dec. 2024 – Present</h4>
+    <ul className="highlight-list">
+      <li>Developing SAGE, an AI counselor application expected to assist over 200+ UTD students with schedule planning across multiple majors</li>
+      <li>Designed AWS Lambda architecture, integrating cloud & API services for chatbot functionality and transcript analysis</li>
+      <li>Automating a script to pull UTD professor data from multiple sources and synthesize content into values that can be interpreted by multiple ACM services</li>
+     </ul>
+  </div>
+  
+  <div className="container">
+    <h4>Co-founder & CTO | GameSense AI | Jan. 2024 – Present</h4>
+    <ul className="highlight-list">
+      <li>Led chatbot development, optimizing RAG by scraping data for various query types while maintaining latency under 800ms</li>
+      <li>Collaborated on a Random Forest Regressor model that cleans scraped data with pandas and predicts performance with 60% accuracy</li>
+      <li>Created promotional content that grew following to 1000+ followers and achieved 500+ impressions on 60% of posts within 2 weeks</li>
+    </ul>
+  </div>
+  
+</div>
 
         <div id="projects" className="section">
           <h3 className="section-title">Projects</h3>
@@ -106,9 +140,9 @@ const App = () => {
             <div className="project-content">
               <h4>Transcriptify | React.js, Whisper, Hugging Face Transformers, PyTorch</h4>
               <ul className="highlight-list">
-                <li>Leveraged whisper models to quickly and efficiently transcribe YouTube videos with automatic speech recognition</li>
-                <li>Cached video transcriptions and optimized models decreasing latency by over 900 ms when downloading transcripts</li>
-                <li>Tested sentiment analysis models and LLM performances optimizing prompts & models to improve AI responses</li>
+                <li>Engineered a YouTube video transcription tool using Whisper for accurate and efficient speech recognition</li>
+                <li>Optimized caching, reducing average latency by 400ms & cutting redundant transcriptions with follow-up queries</li>
+                <li>Refined sentiment analysis and LLM prompt engineering to enhance AI-generated insights & improve clarity</li>
               </ul>
             </div>
           </div>
@@ -136,9 +170,9 @@ const App = () => {
             <div className="project-content">
               <h4>MentAssistant | Flask, React.js, REST APIs, TextBlob</h4>
               <ul className="highlight-list">
-                <li>Created a conversational voice-to-voice bot that uses an LLM to assist those with mental health issues</li>
-                <li>Developed NLP analysis of sentiment and length to detect high-risk terms and produce higher quality responses</li>
-                <li>Maintained storage of past message responses giving the LLM a memory of past responses informing conversation</li>
+                <li>Built an AI-powered mental health assistant with real-time voice interactions and sentiment detection</li>
+                <li>Implemented NLP to identify high-risk terms and improve response quality through dynamic sentiment analysis</li>
+                <li>Enabled conversation memory by storing past responses, improving LLM contextual understanding</li>
               </ul>
             </div>
           </div>
@@ -184,21 +218,9 @@ const App = () => {
           <div className="container">
             <ul className="highlight-list">
               <li>AWS Technical Essentials</li>
-              <li>IBM Software Development Basics, Intro to Node.js, Developing with React.js, Docker & Kubernetes Basics</li>
+              <li>IBM Software Development Basics: Node.js, Docker, Kubernetes, Databases, React.js, Github</li>
               <li>Google Cloud Generative AI Course</li>
               <li>Forage Certifications in Software Development: Goldman Sachs, Accenture, Wells Fargo, EA</li>
-            </ul>
-          </div>
-        </div>
-
-        <div id="extracurriculars" className="section">
-          <h3 className="section-title">Extracurriculars</h3>
-          <div className="container">
-            <h4>ACM Development | Dec. 2024 – Present </h4>
-            <ul className="highlight-list">
-              <li>Updating SAGE, an application expected to assist over 200+ UTD students with schedule planning across multiple majors</li>
-              <li>Optimizing RAG models & algorithms for transcript analysis and schedule improvements aiming to lower latency by 40%</li>
-              <li>Improving the AI chatbot to improve responses to user questions about site features and schedule-related questions</li>
             </ul>
           </div>
         </div>
