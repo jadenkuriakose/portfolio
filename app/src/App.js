@@ -60,7 +60,7 @@ const App = () => {
 
           <div className="experience-container">
             <div className="experience-content">
-              <h4>Tomorrows AI - Software Engineer Intern | Sept. 2024 - Feb. 2025</h4>
+              <h4>Tomorrows AI - Software Engineer Intern | Sept. 2024 - Feb. 2024</h4>
               <ul className="highlight-list">
                <li>Optimized profile management by reducing load time 25% and increasing engagement 45% using React & Firebase</li>
                <li>Enhanced user retention by 35% by integrating interactive maps with React without adding noticeable page latency</li>
