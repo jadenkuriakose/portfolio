@@ -26,7 +26,7 @@ const App = () => {
           <a href="https://www.linkedin.com/in/jaden-kuriakose/" aria-label="LinkedIn Profile">
             <FaLinkedin />
           </a>
-          <a href="https://drive.google.com/file/d/1Q57Ts8noqNX79oM_WYfG4o_KIfjPuol5/view?usp=drive_link" aria-label="Resume">
+          <a href= "https://drive.google.com/file/d/14nRNu55RiD1zcO-HG6S-PrsyG5bS5zas/view?usp=drivesdk" aria-label="Resume">
             <FaFileAlt />
           </a>
           <a href="https://github.com/jadenkuriakose" aria-label="GitHub Profile">
@@ -72,7 +72,7 @@ const App = () => {
           <div className="glowing-line"></div>
 
           <div className="experience-content">
-              <h4>SuperIntro - AI Software Engineer Intern | Oct. 2024 - Dec. 2025</h4>
+              <h4>SuperIntro - AI Software Engineer Intern | Oct. 2024 - Dec. 2024</h4>
               <ul className="highlight-list">
                <li>Reduced voice to voice chatbot latency by 60% by integrating inferencing systems with under 300 ms response times</li>
               <li>Decreased chatbot costs and provided users with the opportunity to choose between over 30 different voice settings</li>
