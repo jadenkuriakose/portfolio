@@ -1,5 +1,3 @@
-"use client"
-
 import {
   FaGraduationCap,
   FaBriefcase,
@@ -17,6 +15,7 @@ import {
   FaMusic,
   FaGamepad,
 } from "react-icons/fa"
+import "./App.css"
 
 export default function App() {
   return (
