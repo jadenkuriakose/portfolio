@@ -57,9 +57,7 @@ h3 {
 
 p {
   margin-bottom: 15px;
-  font-size: 18px;
-  font-family: "Georgia", serif;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 ul {
@@ -201,4 +199,3 @@ section {
     justify-content: center;
   }
 }
-
