@@ -235,6 +235,22 @@ export default function App() {
           </div>
 
           <div className="project-item">
+            <h3> Field Goal Odds Predictor | Python, pandas, sci-kit learn </h3>
+            <ul>
+              <li>
+                Cleans & parses data from the prior season from a generated csv files & uses pandas to analyze the data
+              </li>
+              <li>
+                Trains the model on the data and uses accuracy from nearby ranges to predict the odds that the field goal will be successful
+              </li>
+              <li>
+                Allows for the input of optional factors like field conditions and wind speed to affect the predictions allowing coaches to accurately
+                assess the likelihood of a successful field goal in a certain condition
+              </li>
+            </ul>
+          </div>
+
+          <div className="project-item">
             <h3>
               MentAssistant | Flask, React.js, REST APIs, TextBlob
               <a href="https://github.com/jadenkuriakose/MentAssistant" className="project-link">
@@ -255,7 +271,7 @@ export default function App() {
 
           <div className="project-item">
             <h3>
-              NBA Stat Predictor | Python, BeautifulSoup4, pandas, sci-kit learn, SHAP, Flask, React.js
+              NBA Stat Predictor | Python, BeautifulSoup4, pandas, sci-kit learn, SHAP, Flask
               <a href="https://github.com/jadenkuriakose/NBA-Player-Predictor" className="project-link">
                 <FaGithub />
               </a>
