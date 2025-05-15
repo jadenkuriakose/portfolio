@@ -73,7 +73,7 @@ export default function App() {
           <h3>University of Texas at Dallas</h3>
           <p>Bachelor of Science in Computer Science</p>
           <p>GPA: 4.0/4</p>
-          <p>Expected Graduation: Dec. 2026</p>
+          <p>Expected Graduation: May 2027</p>
           <p>Clubs/Extracurriculars: ACM, Dean's List, AIS</p>
           <p>Relevant Coursework: Computer Science II, Discrete Math, Computer Architecture, & Systems Programming</p>
         </section>
