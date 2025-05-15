@@ -235,17 +235,16 @@ export default function App() {
           </div>
 
           <div className="project-item">
-            <h3> Field Goal Odds Predictor | Python, pandas, sci-kit learn </h3>
+            <h3> Field Goal Odds Predictor | pandas, sci-kit learn, numpy, matplotlib, seaborn </h3>
             <ul>
               <li>
-                Cleans & parses data from the prior season from a generated csv files & uses pandas to analyze the data
+                Cleans & parses data from the prior season from a csv file using pandas and numpy to prepare data for the model
               </li>
               <li>
                 Trains the model on the data and uses accuracy from nearby ranges to predict the odds that the field goal will be successful
               </li>
               <li>
-                Allows for the input of optional factors like field conditions and wind speed to affect the predictions allowing coaches to accurately
-                assess the likelihood of a successful field goal in a certain condition
+                Plots the odds for the player to land a successful field goal & generates an image with seaborn before deleting the image
               </li>
             </ul>
           </div>
