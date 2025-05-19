@@ -218,6 +218,23 @@ export default function App() {
           </div>
 
           <div className="project-item">
+            <h3>
+              CLI Anomaly Detection | Golang
+            </h3>
+            <ul>
+              <li>
+                Developed a system to monitor system metrics (e.g., CPU usage) and detect anomalies using a z-score-based machine learning algorithm
+              </li>
+              <li>
+                Implemented a REST API with endpoints to submit metrics and retrieve current metric data, enabling external integration
+              </li>
+              <li>
+                Integrated thread-safe logging to track metrics, z-scores, and anomaly alerts in a persistent log file
+              </li>
+            </ul>
+          </div>
+
+          <div className="project-item">
             <h3>Traffic Light Classifier | Python, OpenCV2, YoloV8, numpy</h3>
             <ul>
               <li>
@@ -299,7 +316,7 @@ export default function App() {
 
           <div className="skills-group">
             <h3>Languages</h3>
-            <p>Python, JavaScript, Java, HTML, CSS, SQL, C++, R, Kotlin</p>
+            <p>Python, JavaScript, Go, Java, HTML, CSS, SQL, C++, R, Kotlin</p>
           </div>
 
           <div className="skills-group">
